@@ -13,4 +13,8 @@ final class SleepController: UIViewController {
     //MARK: Properties
 
     @IBOutlet weak var sleepButton: UIButton!
+
+    //MARK: Button Actions
+
+    @IBAction func sleep(sender: UIButton) {}
 }
