@@ -13,6 +13,7 @@
 		B9E032991C3D5DAA001C1A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E032931C3D5DAA001C1A50 /* AppDelegate.swift */; };
 		B9E032A11C3D5DBB001C1A50 /* SleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0329F1C3D5DBB001C1A50 /* SleepTests.swift */; };
 		B9E032A81C3D5DC5001C1A50 /* SleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E032A61C3D5DC5001C1A50 /* SleepUITests.swift */; };
+		B9E032AA1C3D6179001C1A50 /* SleepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E032A91C3D6179001C1A50 /* SleepController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B9E0329F1C3D5DBB001C1A50 /* SleepTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepTests.swift; sourceTree = "<group>"; };
 		B9E032A41C3D5DC5001C1A50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9E032A61C3D5DC5001C1A50 /* SleepUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepUITests.swift; sourceTree = "<group>"; };
+		B9E032A91C3D6179001C1A50 /* SleepController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B9E032931C3D5DAA001C1A50 /* AppDelegate.swift */,
+				B9E032A91C3D6179001C1A50 /* SleepController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E032991C3D5DAA001C1A50 /* AppDelegate.swift in Sources */,
+				B9E032AA1C3D6179001C1A50 /* SleepController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
