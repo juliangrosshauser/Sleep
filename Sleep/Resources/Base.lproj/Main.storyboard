@@ -29,6 +29,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sleep" id="fGC-bW-FdJ"/>
+                    <connections>
+                        <outlet property="sleepButton" destination="voX-42-lMj" id="Xxm-X2-pfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

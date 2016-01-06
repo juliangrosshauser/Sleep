@@ -8,4 +8,9 @@
 
 import UIKit
 
-final class SleepController: UIViewController {}
+final class SleepController: UIViewController {
+
+    //MARK: Properties
+
+    @IBOutlet weak var sleepButton: UIButton!
+}
