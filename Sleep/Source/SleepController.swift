@@ -28,7 +28,16 @@ final class SleepController: UIViewController {
 
     //MARK: Button Actions
 
-    @IBAction func sleep(sender: UIButton) {}
+    @IBAction func sleep(sender: UIButton) {
+        do {
+            try playSleepPlaylist()
+        } catch {
+            let alertController = UIAlertController(title: "Error", message: String(error), preferredStyle: .Alert)
+            let alertAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(alertAction)
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
 
     private func playSleepPlaylist() throws {
         let playlistQuery = MPMediaQuery.playlistsQuery()
