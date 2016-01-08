@@ -12,6 +12,7 @@ import MediaPlayer
 enum SleepError: String, ErrorType, CustomStringConvertible {
 
     case PlaylistNotFound = "Playlist not found"
+    case CredentialsNotSet = "Credentials not set"
 
     //MARK: CustomStringConvertible
 
@@ -30,6 +31,7 @@ final class SleepController: UIViewController {
 
     @IBAction func sleep(sender: UIButton) {
         do {
+            try turnOnAmp()
             try playSleepPlaylist()
         } catch {
             let alertController = UIAlertController(title: "Error", message: String(error), preferredStyle: .Alert)
@@ -51,5 +53,11 @@ final class SleepController: UIViewController {
         musicPlayer.repeatMode = .None
         musicPlayer.shuffleMode = .Songs
         musicPlayer.play()
+    }
+
+    private func turnOnAmp() throws {
+        guard let loxoneCredentials = NSProcessInfo.processInfo().environment["LOXONE_CREDENTIALS"] where !loxoneCredentials.isEmpty else {
+            throw SleepError.CredentialsNotSet
+        }
     }
 }
