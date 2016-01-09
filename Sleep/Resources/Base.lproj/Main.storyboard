@@ -18,7 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voX-42-lMj">
-                                <rect key="frame" x="280.5" y="285" width="39" height="30"/>
+                                <rect key="frame" x="267.5" y="279.5" width="65" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Sleep"/>
                                 <connections>
                                     <action selector="sleep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0f-HB-DsN"/>
